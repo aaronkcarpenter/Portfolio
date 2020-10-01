@@ -1,0 +1,7 @@
+.test-about{
+  display: flex;
+  color: orange;
+  background-color: pink;
+  flex-direction: column;
+
+}

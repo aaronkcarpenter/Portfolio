@@ -1,9 +1,22 @@
-import React from 'react';
+import React, { Component } from 'react'
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
+    
+import Navigation from './components/Navigation';
+import About from './components/About';
 
-function App() {
-  return (
-    <h1>Hello world!</h1>
-  );
+class App extends Component {
+
+  render() {
+    return (
+      <BrowserRouter>
+        <Navigation />
+        <Switch>
+        {/* <Route path='/about' component={About} /> */}
+        </Switch>
+      </BrowserRouter>
+    )
+  }
 }
 
-export default App;
+export default App
+
